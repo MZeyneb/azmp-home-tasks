@@ -31,7 +31,7 @@
 
 h1{
     text-align: center;
-    cursor: default;
+    cursor: pointer;
 
 }
 
@@ -39,7 +39,7 @@ p{
     text-align: center;
     font-size: 14px;
     padding: 15px 20px;
-    cursor: default;
+    cursor: pointer;
 }
 
 i{
@@ -90,6 +90,6 @@ button{
 
 .blok:hover button{
     background-color: white;
-    color: black;
+    color: rgb(218, 50, 128);
     border: 1px solid white;
 }
