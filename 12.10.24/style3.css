@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+
+
+
+}
+
+
+#positions{
+
+    height: 400vh;
+}
+
+.esas{
+    width: 400px;
+    height: 300px;
+    background-color: rgb(225, 172, 186);
+    margin: 100px auto;
+    border: 1px solid rgb(164, 114, 127);
+    border-radius: 5px;
+    position: relative;
+    
+
+}
+
+.div1{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(246, 246, 234);
+    border-radius: 5px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+
+}
+.div2{
+    width: 70px;
+    height: 70px;
+    background-color: rgba(185, 226, 201, 0.8);
+    border-radius: 5px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 3;
+
+}
+
+.div3{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(195, 195, 224);
+    border-radius: 5px;
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    z-index: 2;
+
+}
+
+.div4{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(173, 224, 229);
+    border-radius: 5px;
+    position: absolute;
+    right: 150px;
+    bottom: 50px;
+}
+.div5{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(246, 250, 192);
+    border-radius: 5px;
+    position: sticky;
+    top: 0;
+    left: 90%;
+    z-index: 4;
+
+}
+
+.kunc{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(122, 228, 182);
+    border-radius: 5px;
+    position: fixed;
+    right: 0;
+    top: 400px;
+
+
+}
+
+
