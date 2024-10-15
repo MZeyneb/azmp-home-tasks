@@ -39,7 +39,7 @@ nav li{
     color: black;
     margin: 7px 0;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 nav li:hover{
     color: rgb(78, 78, 78);
