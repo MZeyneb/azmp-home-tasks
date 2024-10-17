@@ -181,6 +181,7 @@ nav .menu h5{
 .sekil{
     position: relative;
     cursor: pointer;
+
 }
 
 .sekil img{
@@ -198,7 +199,7 @@ nav .menu h5{
     justify-content: center;
     align-items: center;
     display: none;
-    transition: 0.5s;
+    transition: 0.3s;
     
 
 }
