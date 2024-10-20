@@ -525,7 +525,6 @@ footer p{
 }
 footer .flex{
     display: flex;
-    gap: 20px;
 }
 
 footer .flex .col-6{
