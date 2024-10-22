@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3{
+    font-size: 30px;
+    margin: 10px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.ilkyazi{
+    border: 2px solid purple;
+}
+.ilkyazi2{
+    background-color: red;
+
+}
+
+.digeryazi{
+    background-color: green;
+}
+h2{
+    background-color: yellow;
+}
