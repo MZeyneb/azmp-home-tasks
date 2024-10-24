@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+
+.bloklar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.blok{
+
+    width: 20%;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 40px 60px;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+
+h1{
+    text-align: center;
+    cursor: pointer;
+
+}
+
+p{
+    text-align: center;
+    font-size: 14px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+i{
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+button{
+    margin: 15px 0px;
+    margin-bottom: 30px;
+    padding: 5px 60px;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+    
+}
+
+.buton{
+    display: flex;
+    justify-content: center;
+}
+
+
+#social{
+    display: flex;
+    justify-content: center;
+}
+
+
+.blok:hover{
+
+    background-color: rgb(218, 50, 128);
+    color: white;
+    border: 2px solid rgb(218, 50, 128);
+
+
+}
+
+.blok:hover button{
+    background-color: white;
+    color: rgb(218, 50, 128);
+    border: 1px solid white;
+}

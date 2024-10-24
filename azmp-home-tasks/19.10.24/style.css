@@ -1,0 +1,673 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.basliq{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 12%;
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.basliq .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.social i{
+    cursor: pointer;
+    color: rgb(177, 177, 177);
+    font-size: 10px;
+    transition: 0.3s;
+}
+
+.social i:hover{
+    color: #fab700;
+}
+
+.buttons button, select{
+    padding: 4px 20px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.language{
+    border: 1px solid rgb(216, 216, 216);
+    color: rgb(139, 139, 139);
+}
+
+.quote{
+    border: 1px solid #fab700;
+    background-color: #fab700;
+    color: white;
+    transition: 0.3s;
+}
+
+.quote:hover{
+    background-color: white;
+    color: black;
+}
+
+.struct{
+    position: relative;
+}
+nav{
+    width: 100%;
+    align-items: center;
+    position: sticky;
+    background-color: white;
+    z-index: 100000;
+    top: 0;
+    box-shadow: 0 3px 10px -4px gray;
+ 
+
+  
+}
+
+nav .menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+nav .menu ul li a{
+    color: black;
+    font-size: 14px;
+    transition: 0.3s;
+}
+nav .menu ul li a:hover{
+    color: #fab700;
+}
+nav .menu ul i{
+    cursor: pointer;
+}
+nav .menu{
+    align-items: center;
+    display: flex;
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 12%;
+}
+
+nav .logo{
+    cursor: pointer;
+}
+#dream .container{
+    max-width: 100%;
+    background-image: url("https://preview.colorlib.com/theme/builder/img/banner/home-banner.jpg.webp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 230px 70px;
+}
+#dream .container h1{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 50px;
+    
+}
+
+#dream .container h1 span{
+    background-color: #fab700;
+    color: black;
+    border-radius: 5px;
+}
+
+.textp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+
+}
+
+.textp .myp{
+    width: 60%;
+}
+
+.textp p{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+.buttonarea{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.buttonarea button{
+    padding: 15px 45px;
+    font-size: 13px;
+    border-radius: 5px;
+    border: none;
+    background-color: #222222;
+    color: #fab700;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.buttonarea button:hover{
+    background-color: #fab700;
+    color: #222222;
+}
+
+#services .mylogo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#services .col-4 h2{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5% 0%;
+}
+
+#services .row{
+    padding-top: 6%;
+    justify-content: center;
+    padding-bottom: 10%;
+
+   
+}
+
+#services .col-4 p{
+    font-size: 14px;
+    color: #515151;
+    text-align: center;
+
+}
+#services .col-4{
+    transition: 0.3s;
+    padding: 70px 20px;
+}
+
+#services .container{
+    padding: 0 7%;
+}
+
+#services h1{
+    text-align: center;
+    padding-top: 8%;
+    font-size: 28px;
+}
+
+#services p{
+    text-align: center;
+    font-size: 15px;
+    color: #515151;
+}
+
+#services .col-4:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#projects h1{
+    text-align: center;
+    font-size: 28px;
+
+}
+#projects p{
+    text-align: center;
+    font-size: 15px;
+    color: #515151;
+}
+
+
+#projects .container{
+    margin-top: 40px;
+}
+#projects .container .image{
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+}
+#projects .container img{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    
+}
+
+#projects .overlay{
+    background-color: rgba(250, 183, 0, 0.8);
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s;
+    height: 100%;
+
+
+}
+
+#projects .col-4:hover .overlay{
+    opacity: 100%;
+
+}
+#projects .overlay h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+#projects .overlay p{
+    text-align: center;
+    font-size: 14px;
+}
+#projects .text{
+    width: 90%;
+}
+
+
+#projects .col-4{
+    padding: 0;
+}
+
+#members h1{
+    text-align: center;
+    font-size: 28px;
+
+}
+#members p{
+    text-align: center;
+    font-size: 15px;
+    color: #515151;
+    padding-bottom: 5%;
+}
+
+#members{
+    padding: 5% 0;
+}
+
+#members .memberimg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+#members .memberimg img{
+    width: 100%;
+}
+#members .col-3 h2{
+    text-align: center;
+    font-size: 17px;
+    padding-top: 5%;
+}
+#members .col-3 p{
+    text-align: center;
+    font-size: 13px;
+    color: #515151;
+}
+
+#members .overlay{
+    background-color: rgba(250, 183, 0, 0.8);
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#members .overlay:hover{
+    
+    opacity: 100;
+}
+
+#members .row{
+    padding: 0 10%;
+}
+#members .container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10%;
+}
+#counts{
+    background-color: #fab700;
+    
+}
+
+#counts .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 6% 15%;
+    flex-wrap: wrap;
+    
+}
+
+#counts .count h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+
+}
+#counts .count p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+#counts .count{
+    width: 200px;
+}
+
+#features{
+    padding-bottom: 8%;
+}
+#features h1{
+    text-align: center;
+    padding-top: 8%;
+    font-size: 28px;
+
+}
+#features p{
+    text-align: center;
+    font-size: 15px;
+    color: #515151;
+    padding-bottom: 5%;
+}
+#features .upper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#features .container{
+    width: 100%;
+    display: flex;
+    padding: 0 10%;
+    
+}
+
+#features .row{
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+#features .col-4 .upper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#features .col-4 .card{
+    padding: 3px;
+    border: 1px solid rgb(216, 216, 216);
+    padding: 50px 20px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+#features .col-4 .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    color: #fab700;
+}
+#members2{
+    background-color: #f9f9ff;
+}
+
+
+#members2 .card2{
+    padding: 3px;
+    display: flex;
+    gap: 20px;
+    padding: 20px 30px;
+    border: 1px solid rgb(216, 216, 216);
+    /* width: 45%; */
+    border-radius: 6px;
+    transition: 0.5s;
+}
+#members2 .container{
+    width: 100%;
+    display: flex;
+    padding: 8% 10%;
+    
+}
+
+#members2 .right p{
+    color: gray;
+    font-size: 14px;
+    padding-bottom: 20px;
+
+}
+#members2 .right h4{
+    font-size: 18px;
+
+}
+#members2 .right h5{
+    color: gray;
+    font-size: 15px;
+    padding-bottom: 20px;
+    font-weight: 400;
+
+}
+
+#members2 .row{
+    width: 100%;
+    justify-content: center;
+    /* gap: 30px; */
+}
+
+#members2 .col-6 .card2:hover{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px;
+    color: #fab700;
+
+
+}
+
+#sponsors .container{
+    display: flex;
+    padding: 8% 10%;
+    justify-content: space-around;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#sponsors .sponsor{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+#sponsors .sponsor:hover{
+    opacity: 1;
+}
+
+footer{
+    background-color: #222222;
+}
+footer h3{
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 5%;
+    color: white;
+}
+
+footer h4 a{
+    font-size: 24px;
+    font-weight: 500;
+    color: #fab700;
+}
+footer p{
+    font-size: 15px;
+    font-weight: 200;
+    color: gray;
+}
+footer .flex{
+    display: flex;
+}
+
+footer .flex .col-6{
+    padding: 0 1rem;
+}
+
+footer .container{
+    padding: 8% 10%;
+}
+
+footer input{
+    width: 400px;
+    height: 100%;
+    
+    padding: 8px 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+
+}
+
+footer .myinput{
+    position: relative;
+}
+
+footer .inputarea{
+    padding-top: 4%;
+    display: flex;
+    align-items: center;
+  
+    width: 100%;
+    display: flex;
+    position: relative;
+    
+
+}
+
+footer .submit{
+    width: 35px;
+    height: 35px;
+    background-color: #fab700;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+
+
+footer .contacts{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .contacts i{
+    font-size: 17px;
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+footer .contacts i:hover{
+    background-color: #fab700;
+    color: black;
+}
+
+footer p a{
+    color: #fab700;
+}
+
+.under{
+    padding-top: 2%;
+}
+
+nav .menulogo{
+    font-size: 25px;
+    color: #fab700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+
+    nav .menu{
+        display: none;
+    }
+    nav .menulogo{
+        display: flex;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    footer .contacts{
+        justify-content: center;
+    }
+
+    #dream .container{
+        padding: 130px 40px;
+    }
+    #dream .container h1{
+        font-size: 28px;
+    }
+}
+
+
+@media only screen and (max-width: 573px) {
+    .myinput{
+        width: 100%;
+    }
+    .myinput input{
+        width: 100%;
+    }
+
+    .basliq{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    #dream .container h1{
+        font-size: 20px;
+    }
+    #dream .container{
+        padding: 80px 0;
+    }
+}
+

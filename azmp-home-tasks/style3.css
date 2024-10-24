@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: rgb(232, 89, 153);
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    
+    
+
+
+}
+
+nav li{
+    list-style-type: none;
+    margin: 20px;
+}
+
+nav a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    transition: 1s;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+nav img{
+    width: 100%;
+    border-radius: 50%;
+    margin: 10px;
+    margin-right: 300px;
+}
+
+nav a:hover{
+    background-color: rgb(236, 229, 216);
+    
+    color: rgb(232, 89, 153);
+
+}
+
+#dessertler img{
+    width: 100%;
+    cursor: pointer;
+
+
+}
+
+
+#dessertler{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 85%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.desert{
+    
+    justify-content: center;
+   
+    width: 25%;
+    margin: 20px;
+}
+
+.desert h2{
+    text-align: center;
+}
+
+.desert .qiymetyeri{
+    background-color: rgb(232, 89, 153);
+    color: white;
+}
+
+footer{
+
+    display: flex;
+    background-color: rgb(232, 89, 153);
+}
+
+footer h3{
+
+    color: white;
+    font-size: 30px;
+}
+
+footer li {
+    color: white;
+    list-style-type: none;
+    font-size: 25px;
+
+    
+}
+
+footer a{
+
+    text-decoration: none;
+}
+
+footer .unvan, .elaqe, .dil{
+
+    margin: 20px 100px;
+}
+
+#dessertler .desert:nth-child(4){
+    width: 22.7%;
+}
+
+
+#dessertler .desert:nth-child(6){
+    width: 27.5%;
+}
+
+
+.dil a{
+    font-size: 20px;
+}
+.eng{
+    color: blue;
+    text-decoration: underline;
+    
+}
+
+.az{
+    cursor: default;
+}

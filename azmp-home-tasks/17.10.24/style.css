@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    
+}
+html {
+    scroll-behavior: smooth;
+  }
+#welcome{
+    background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 17%;
+   padding-top: 30 0px;
+    position: relative;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18%;
+    padding: 30px 10%;
+    position: fixed;
+    background-color: #212529;
+    width: 100%;
+    z-index: 100;
+    
+
+  
+
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+nav ul li a{
+    color: white;
+    font-size: 18.5px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+nav ul li a:hover{
+    color: #fed136;
+}
+
+nav h1{
+    font-size: 25px;
+    color: #fed136;
+}
+
+nav .menu{
+    border: 1px solid white;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: none;
+}
+nav .menu h5{
+    font-size: 17px;
+    color: white;
+    font-weight: 400;
+}
+
+#welcome h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+#welcome h2{
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    padding-bottom: 30px;
+}
+#welcome .buton{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#welcome .buton button{
+    background-color: #fed136;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    padding: 15px 35px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#welcome .buton button:hover{
+    background-color: #d1b038;
+    
+}
+
+.yazilar{
+    width: 100%;
+    padding: 5% 0;
+}
+
+.yazilar h1{
+    font-size: 40px;
+    color: black;
+    text-align: center;
+
+}
+
+.yazilar p{
+    font-size: 16px;
+    color: gray;
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    background-color: #fed136;
+    border-radius: 50%;
+}
+.icons .icon i{
+    font-size: 70px;
+    color: white;
+}
+
+.col-4 h4{
+    font-size: 25px;
+    text-align: center;
+}
+
+.col-4 p{
+    text-align: center;
+}
+
+.row1{
+
+    padding-bottom: 5%;
+
+}
+
+#portfolio img{
+    width: 100%;
+    
+}
+
+#portfolio h1{
+    text-align: center;
+}
+
+#portfolio{
+    padding: 0 5%;
+}
+
+.col-3 img{
+    width: 50%;
+    cursor: pointer;
+}
+
+.col-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sekil{
+    position: relative;
+    cursor: pointer;
+
+}
+
+.sekil img{
+    position: relative;
+    
+}
+
+.hoverf{
+    position: absolute;
+    background-color: rgba(254, 209, 54, 0.8);
+    top: 0;
+    width: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+    
+
+}
+
+.sekil:hover .hoverf{
+    display: flex;
+    opacity: 100%;
+}
+
+.hoverf h6{
+    font-size: 100px;
+    font-weight: 400;
+    color: white;
+}
+
+footer #social{
+    padding: 2% 5%;
+}
+.logos{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.logos .icn{
+    color: white;
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#end{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+    align-items: center;
+}
+
+#end ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+}
+
+.copyr p{
+    color: rgb(67, 67, 67);
+    font-weight: 300;
+}
+.row2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+@media only screen and (max-width: 1023px) {
+
+    nav ul{
+        display: none;
+    }
+    nav .menu{
+        display: flex;
+    }
+    nav{
+        background-color: #212529;
+    }
+    
+}
+
+.row3{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sekil{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4%;
+}
+
+.row3 img{
+    width: 55%;
+    border-radius: 50%;
+    border: 10px solid #dfe0e1;
+}
+
+.yazilar .text{
+    margin: 0 auto;
+    width: 50%;
+}
