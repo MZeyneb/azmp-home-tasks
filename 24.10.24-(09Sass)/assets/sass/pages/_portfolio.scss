@@ -1,0 +1,87 @@
+#banner{
+
+    h1{
+        @extend %h1text;
+        text-align: center;
+    }
+    p{
+        @extend %ptext;
+        text-align: center;
+
+
+    }
+}
+
+#grid{
+    background-color: $cream;
+    .container{
+        display: flex;
+        justify-content: center;
+        padding: 4% 0;  
+        nav{
+        }
+        ul{
+
+            display: flex;
+            gap: 60px;
+            li{
+                a{
+                    color: $dark-brown
+
+                }
+            }
+            
+
+        }
+
+    }
+
+    h1{
+        @extend %h1text;
+        text-align: center;
+    }
+    p{
+        @extend %ptext;
+        text-align: center;
+
+
+    }
+
+    .container{
+        .row{
+            .image{
+                position: relative;
+                .overlay{
+
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                h5{
+                    position: absolute;
+                    bottom: 120px;
+                    left: 50px;
+                    width: 120px;
+                    height: 38px;
+                    background-color: white;
+                    color: $dark-brown;
+                    border-radius: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                h1{
+                    position: absolute;
+                    bottom: 30px;
+                    left: 50px;
+
+
+                }
+
+
+            }
+        }
+    }
+
+
+}

@@ -1,46 +1,108 @@
 #banner{
     background-color: $dark-blue;
     padding: 7% 10%;
-    display: flex;
-    .leftside{
-        width: 50%;
-        h5{
-            font-size: 16px;
-            font-weight: 200;
-            color: $orange;
-            padding-bottom: 3%;
-        }
-        h1{
-            font-weight: 700;
-            color: white;
-            font-size: 72px;
-            padding-bottom: 4%;
 
+    .banner{
+        display: flex;
+
+
+        .leftside{
+            width: 50%;
+            position: relative;
+            .star{
+                position: absolute;
+                top: 0;
+                right: 30%;
+            }
+            h5{
+               @extend %h5text;
+                padding-bottom: 3%;
+            }
+            h1{
+                @extend %h1text;
+                padding-bottom: 4%;
+                z-index: 1000;
+    
+            }
+            p{
+              @extend %ptext;
+                padding-bottom: 6%;
+                
+            }
+
+            .avatar{
+                display: flex;
+                column-gap: 15px;
+                
+                span{
+
+                    color: white;
+                }
+            }
         }
-        p{
-            font-size: 16px;
-            color: $gray;
-            padding-bottom: 6%;
-            
+        .buttons{
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            padding-bottom: 25%;
+    
+            button{
+    
+                @extend %buton
+    
+            }
+    
+            .contact{
+                font-weight: 300;
+                background-color: $dark-blue;
+                border: 1px solid $dark-blue;
+            }
+    
+    
+        }
+
+    }
+}
+
+
+#footer1{
+    background-color: $orange;
+
+    .container{
+    padding: 5%;
+
+
+        .banner{
+            display: flex;
+            align-items: center;
+            gap: 60px
         }
     }
-    .buttons{
-        display: flex;
-        align-items: center;
-        gap: 25px;
 
-        button{
+    h1{
+        @extend %h1text;
+        padding-bottom: 4%;
+    }
+    p{
+        @extend %ptext;
+        padding-bottom: 6%;
 
-            @extend %buton
+    }
+    .white{
+        background-color: white;
+        color: $dark-brown;
+        @extend %buton;
+    }
 
+    .leftside{
+        width: 50%;
+    }
+
+    .rightside{
+        width: 50%;
+
+        img{
+            width: 100%;
         }
-
-        .contact{
-            font-weight: 300;
-            background-color: $dark-blue;
-            border: 1px solid $dark-blue;
-        }
-
-
     }
 }

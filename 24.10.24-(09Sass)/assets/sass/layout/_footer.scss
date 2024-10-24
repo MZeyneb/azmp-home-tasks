@@ -1,0 +1,90 @@
+footer{
+
+    .container{
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+        .menu-serv{
+            display: flex;
+            column-gap: 180px;
+
+            .menu, .service{
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                h3{
+                    color: $orange;
+                }
+
+
+                ul{
+                color: $dark-brown;
+                gap: 12px;
+                display: flex;
+                flex-direction: column;
+
+                li{
+
+                    a{
+
+                        color: $dark-brown;
+                    }
+                }
+    
+                }
+
+            }
+        }
+
+
+    }
+
+    .line{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logos{
+
+        display: flex;
+        gap: 15px;
+        i{
+            width: 48px;
+            height: 48px;
+            background-color: $orange;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+    }
+
+
+    h4{
+
+        color: $dark-brown;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .container{
+        
+    }
+
+    .copyright{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        ul{
+            display: flex;
+            color: $dark-brown;
+            gap: 70px;
+        }
+    }
+}
