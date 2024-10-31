@@ -29,24 +29,34 @@
 // alert(count)
 
 // 4-------
-
+// for (let i = 0; i < 11; i++) {
+//   let hasil = i*i;
+//   console.log(`${i} * ${i} = ${hasil}`);
+  
+// }
 
 // 5-------
+// for (let i = 0; i < 11; i++) {
+//   let hasil2 = i**2;
+//   let hasil3 = i**3
+//   console.log(`${i}  ${hasil2} ${hasil3}`);
+  
+// }
 
 
 // 6-------
 
-let sumOdd = 0
-let sumEven = 0
- for (let i = 0; i <100; i++) {
-  if  (i%2 == 1){
-      sumOdd++;
-}
-}
-console.log(sumOdd);
-for (let i = 0; i <= 100; i++) {
- if(i%2 == 0){
-   sumEven++;
-}   
-}
-console.log(sumEven);
+// let sumOdd = 0
+// let sumEven = 0
+//  for (let i = 0; i <100; i++) {
+//   if  (i%2 == 1){
+//       sumOdd++;
+// }
+// }
+// console.log(sumOdd);
+// for (let i = 0; i <= 100; i++) {
+//  if(i%2 == 0){
+//    sumEven++;
+// }   
+// }
+// console.log(sumEven);
