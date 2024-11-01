@@ -60,3 +60,34 @@
 // }   
 // }
 // console.log(sumEven);
+
+// 7------
+
+
+// 8------
+
+
+// let  array = [4,2,7,9,3,12,46,32,19];
+// let max = array[0];
+// let min = array[0];
+// for (let i = 0; i < array.length; i++) {   
+//     if(array[i]>max){
+//         max = array[i];
+//     } 
+//     else if(array[i]< min){
+//         min = array[i];
+//     }
+// }
+// console.log((max + min) / 2);
+
+// let sampleNews = "As software developers, the natural tendency is to start developing applications based on your own hands-on experience and knowledge right away. However, overtime issues in the application arise, adaptations to changes, and new features happen.";
+// let count = 0;
+// for (let i = 0; i < sampleNews.length; i++) {
+//     if (sampleNews[i] == " "){
+//         count++
+//     }
+
+    
+// }
+
+// console.log(count);
