@@ -52,7 +52,7 @@
 // 4
 
 // function upper(){
-//     
+    
 //     let sentence = prompt("Cumle daxil edin: ")
 //     let flag = false;
 //     let result = ""
@@ -258,4 +258,4 @@
   
 // }
 
-// compare([2,5,6,2], [2,5,6,2])
+// compare([2,5,6,2], [2,5,6,2]);
