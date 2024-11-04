@@ -5,7 +5,7 @@
 
 // }
 
-// power(5, 3)
+// power(5, 3);
 
 // 2
 
@@ -132,7 +132,7 @@
 
 // function median(array){
 //     if(array.length%2 == 0){
-//         console.log(array[array.length/2], array[(array.length/2) - 1]);
+//         console.log((array[array.length/2] + array[(array.length/2) - 1])/2);
         
 //     }
 //     else if(array.length%2 != 0){
