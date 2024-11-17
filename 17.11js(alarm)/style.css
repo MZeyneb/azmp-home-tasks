@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(141, 62, 141);
+}
+
+.box ul li{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    list-style: none;
+    opacity: 0;
+    background: radial-gradient(white, transparent, transparent);
+    bottom: 0;
+    left: 10vw;
+    animation: animate 15s linear infinite;
+}
+
+.box ul li:nth-child(2){
+    left: 37vw;
+    animation-delay: 2s;
+}
+.box ul li:nth-child(3){
+    left: 25vw;
+    animation-delay: 4s;
+}
+.box ul li:nth-child(4){
+    left: 60vw;
+    animation-delay: 6s;
+}
+.box ul li:nth-child(5){
+    left: 75vw;
+    animation-delay: 8s;
+}
+.box ul li:nth-child(6){
+    left: 82vw;
+    animation-delay: 7s;
+}
+.box ul li:nth-child(7){
+    left: 80vw;
+    animation-delay: 2s;
+}
+@keyframes animate{
+    0%{
+        transform: scale(0);
+        opacity: 1;
+        bottom: 0;
+    }
+    100%{
+        transform: scale(10);
+        opacity: 0;
+        bottom: 100vh;
+    }
+}
+.container{
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 33%;
+    margin: auto;
+    margin-top: 220px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.clock input{
+    width: 80%;
+    padding: 10px 7px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+
+.clock h1{
+    font-size: 45px;
+    color: white;
+    font-weight: 400;
+}
+
+.clock p{
+    color: white;
+}
+
+.start{
+    margin: auto;
+    width: 17%;
+    padding: 3px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.start:hover{
+    background-color: rgb(97, 41, 97);
+    color: white;
+}
+
+.butn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
