@@ -23,7 +23,7 @@ h1{
     margin: auto;
     width: 45%;
     background-color:rgb(250, 240, 230);
-    height: 550px;
+    /* height: 550px; */
     border-radius: 10px;
     padding: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -114,7 +114,7 @@ h1{
     align-items: center;
 }
 .block input{
-   width: 3%;
+   width: 6%;
    height: 17px;
    cursor: pointer;
 }
@@ -245,4 +245,49 @@ h1{
 
 .edit-bg .cancel-edit:hover{
     background-color: rgb(140, 97, 44);
+}
+
+@media only screen and (max-width: 768px) {
+    .buttons button{
+        width: 100%;
+    }
+    .buttons{
+        gap: 10px;
+    }
+    .adding{
+        flex-wrap: wrap;
+    }
+
+    .adding input{
+        width: 100%;
+        padding: 4px;
+    }
+    .adding button{
+        width: 100%;
+    }
+    .choice{
+        flex-wrap: wrap;
+    }
+    .choice button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .modal input{
+        width: 100%;
+        padding: 4px;
+    }
+    .modal{
+        width: 80%;
+    }
+
+    .container{
+        width: 80%;
+        
+    }
+
+    .scales{
+        width: 15%;
+    }
+
 }
