@@ -44,10 +44,8 @@ function saveToLocalStorage() {
     checkbox.addEventListener("click", function () {
       if (checkbox.checked) {
         checktext.style.textDecoration = "line-through";
-        done = true;
       } else {
         checktext.style.textDecoration = "none";
-        done = false;
       }
       saveToLocalStorage();
     });
@@ -67,7 +65,7 @@ function saveToLocalStorage() {
       edit.style.display = "flex";
       const editing = document.querySelector(".editing");
       editing.value = todoText;
-      current = todoText; 
+      current = todos.indexOf(todoText);
     });
   });
 }
@@ -84,19 +82,17 @@ function addingg() {
   
   }
 
-save.addEventListener("click", function(){
+  save.addEventListener("click", function () {
     const editing = document.querySelector(".editing");
-    let edited = editing.value.trim();
-    const blocktodo = current.querySelector("h2");
-    blocktodo.textContent = edited
-    const index = todos.indexOf(blocktodo.textContent);
-        if(index!== -1){
-            todos[index] = edited;
-        }
-        saveToLocalStorage(); 
-        renderTodos();
-        edit.style.display= "none";
-})
+    const edited = editing.value.trim();
+  
+    if (edited && current !== null) {
+      todos[current] = edited; 
+      saveToLocalStorage();
+      renderTodos();
+      edit.style.display = "none";
+    }
+  });
 
 completed.addEventListener("click", function(){
     const blocks = document.querySelectorAll(".block");
