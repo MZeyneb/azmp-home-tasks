@@ -14,7 +14,6 @@ const cedit = document.querySelector(".cancel-edit");
 const save = document.querySelector(".save");
 
 
-let done = false;
 let current = null; 
 
 function saveToLocalStorage() {
