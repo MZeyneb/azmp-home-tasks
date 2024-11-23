@@ -16,6 +16,8 @@ function showData(endpoint){
     })
 }
 
+showData("products")
+
 function drawCards(arr){
     cards.innerHTML = "";
     arr.forEach((element) => {
