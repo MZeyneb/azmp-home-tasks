@@ -29,7 +29,11 @@ function drawCards(arr){
         <img src="${element.image}">
         <h3>${element.title}</h3>
         <P>${element.category}</p>
+        <div class="det">
         <h4>${element.price}</h4>
+        <button class="delete">delete</button>
+        
+        </div>
         
         
         `
@@ -39,5 +43,35 @@ function drawCards(arr){
     });
 
 }
+const deleteBtns = document.querySelectorAll(".delete")
+
+deleteBtns.forEach((btn)=>{
+    btn.addEventListener("click", function(){
+
+        const id = this.getAttribute("data-id")
+        deleting("products", id, this)
+    })
+})
+
+function deleting(endpoint, id, btn){
+    fetch(`${BASE_URL}/${endpoint}/${id}`, {
+        method: "DELETE",
+
+    })
+    .then((response)=>{
+        if(response.ok){
+            btn.closest("tr").remove()
+
+        }
+    })
+    .catch((err) => {
+        console.log(err);
+      });
+
+}
+
+window.addEventListener("DOMContentLoaded", function () {
+    showData("products");
+  });
 
 // showData("products")
