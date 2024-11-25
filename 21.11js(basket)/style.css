@@ -59,5 +59,6 @@ form .submit:hover{
 a{
     text-decoration: underline;
     color: #f0a500;
+    cursor: pointer;
 
 }
