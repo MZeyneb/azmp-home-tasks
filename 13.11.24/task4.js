@@ -1,4 +1,4 @@
-const buton = document.querySelector(".butn");
+const buton = document.querySelector(".open");
 const menu = document.querySelector(".menu");
 const x = document.querySelector("span");
 
