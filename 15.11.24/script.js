@@ -2,6 +2,7 @@ import { products } from "./data.js";
 
 const cards = document.querySelector(".cards");
 const modal = document.createElement("div");  
+const form = document.querySelector(".addForm form")
 
 function drawtable(products) {
     cards.innerHTML = ""; 
@@ -18,6 +19,8 @@ function drawtable(products) {
         <div class="buttons">
         <button class="butn details" data-id="${product.id}">Details</button>
         <button class="butn delete">Delete</button>
+
+
         </div>
         `;
         cards.appendChild(card);
@@ -94,6 +97,25 @@ function showDetailsModal(product) {
  
     
 }
+
+form.addEventListener("submit", function(event){
+    event.preventDefault();
+    const title = document.querySelector('input[name="title"]').value;
+    const price = parseFloat(document.querySelector('input[name="price"]').value);
+    const description = document.querySelector('input[name="description"]').value;
+    const image = document.querySelector('input[name="image"]').value;
+  const newProduct = {
+        id: Date.now(),
+        title: title,
+        price: price,
+        description: description,
+        image: image,
+    };
+
+    products.push(newProduct);
+    form.reset();
+    drawtable(products);
+})
 
 
 drawtable(products);
