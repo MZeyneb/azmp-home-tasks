@@ -90,3 +90,41 @@ let arr = [
 
 // 5
 
+let longest = arr.reduce((max, obj)=> {
+    if(obj.name.length > max.name.length){
+        max = obj
+    }
+    return max    
+}, arr[0])
+
+// console.log(longest);
+
+// 6
+
+// console.log(longest.key);
+
+// 7
+// let indexi = arr.findIndex(obj=> obj == longest)
+// console.log(indexi ** 2);
+
+
+// 8
+
+// let newArr = arr.filter(obj => obj.name.length == 4)
+// console.log(newArr);
+
+// 9
+
+// let longestKey = arr.reduce((max, obj)=> {
+//     if(obj.key > max.key){
+//         max = obj
+//     }
+//     return max    
+// }, arr[0])
+// console.log(longestKey.name);
+
+// 10
+
+let twol = arr.filter(obj=>obj.name.split("l").length - 1 == 2)
+
+console.log(twol);
