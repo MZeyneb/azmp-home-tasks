@@ -90,12 +90,12 @@ let arr = [
 
 // 5
 
-let longest = arr.reduce((max, obj)=> {
-    if(obj.name.length > max.name.length){
-        max = obj
-    }
-    return max    
-}, arr[0])
+// let longest = arr.reduce((max, obj)=> {
+//     if(obj.name.length > max.name.length){
+//         max = obj
+//     }
+//     return max    
+// }, arr[0])
 
 // console.log(longest);
 
@@ -125,6 +125,17 @@ let longest = arr.reduce((max, obj)=> {
 
 // 10
 
-let twol = arr.filter(obj=>obj.name.split("l").length - 1 == 2)
+// let twol = arr.filter(obj=>obj.name.split("l").length - 1 == 2)
 
-console.log(twol);
+// console.log(twol);
+
+
+// 11
+
+// let atleasttwo = arr.filter(obj=>obj.name.split("t").length - 1 >= 2)
+// console.log(atleasttwo);
+
+// 12
+
+// let newArr = arr.filter(obj => obj.key > 10 && obj.name.startsWith("l"));
+// console.log(newArr);
