@@ -4,30 +4,58 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className="modal-bg">
+        <div className="modal">
+            <h2>Are you sure you want to clear all the data?</h2>
+            <div className="choice">
+                <button className="cleard">Clear</button>
+                <button className="cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div className="edit-bg">
+        <div className="modal">
+            <h2>Edit</h2>
+            <input type="text" className="editing" />
+            <div className="choice">
+                <button className="save">Save</button>
+                <button className="cancel-edit">Cancel</button>
+            </div>
+        </div>
+
+    </div>
+
+    <h1>To Do App</h1>
+
+    <div className="container">
+        <div className="buttons">
+            <button className="all">All To Dos</button>
+            <button className="completed">All Completed To Dos</button>
+            <button className="pending">All Pending To Dos</button>
+            <button className="clear">Clear All</button>
+
+
+
+        </div>
+
+        <div className="box">
+            <div class="adding">
+                <input type="text" class="todo"/>
+                <button class="add">ADD</button>
+            </div>
+        </div>
+        <hr/>
+
+        <div className="added">
+
+        </div>
+
+    </div>
     </>
   )
 }
