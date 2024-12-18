@@ -15,12 +15,13 @@
 
 body{
 
-    background-color: rgb(200, 230, 200) ;
+    background-color: rgb(222, 205, 56) ;
 }
 
 h1{
     text-align: center;
     padding: 30px;
+    color: white;
 
 }
 
@@ -50,15 +51,16 @@ h1{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: rgb(200, 230, 200);
+    background-color: rgb(222, 205, 56);
     transition: 0.3s;
+    color: white;
 }
 .buttons .clear{
     background-color: rgb(130, 130, 130);
     color: white;
 }
 .buttons button:hover{
-    background-color: rgb(183, 212, 183);
+    background-color: rgb(228, 221, 156);
 }
 
 
@@ -88,12 +90,13 @@ h1{
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    background-color: rgb(200, 230, 200);
+    background-color: rgb(222, 205, 56);
     transition: 0.3s;
+    color: white;
 }
 
 .adding .add:hover{
-    background-color: rgb(183, 212, 183);
+    background-color: rgb(221, 212, 130);
 }
 
 .added{
