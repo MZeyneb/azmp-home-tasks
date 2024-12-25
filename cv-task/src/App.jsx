@@ -1,100 +1,101 @@
 import { useState } from 'react'
 import './App.css'
-import styles from "./assets/sass/Style.module.scss"
+import "./assets/sass/style.scss"
+
 function App() {
 
   return (
     <>
-      <header className={styles.header}>
-        <h1 className={styles.name}>John Doe</h1>
-        <p className={styles.subtitle}>Web Developer | UI/UX Designer</p>
-      </header>
 
-      <section className={styles.profile} id="profile">
-        <div className={styles.container}>
-          <div className={styles.profileImage}>
-            <img
-              src="profile.jpg"
-              alt="John Doe"
-              className={styles.profilePic}
-            />
-          </div>
-          <div className={styles.profileInfo}>
-            <h2 className={styles.sectionTitle}>About Me</h2>
-            <p className={styles.text}>
-              I am a passionate web developer with experience in building
-              responsive and user-friendly websites. I love problem-solving and
-              creating elegant solutions for complex problems.
-            </p>
-          </div>
+    <header>
+      <nav>
+        <h1>My Portfolio</h1>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+
+        </ul>
+      </nav>
+
+    </header>
+
+    <div id="hero">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+
+      </ul>
+      <div className="box">
+        <div className="imge">
+          <img src="https://img.freepik.com/premium-vector/cute-hijab-pastel-aesthetic_510538-2.jpg" alt="" />
         </div>
-      </section>
+        <h1>Zeyneb Mustafazade</h1>
+        <h3>Student, Web Developer & Illustrator</h3>
 
-      <section className={styles.skills} id="skills">
-        <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>
-            Skills <span className={styles.highlight}>Set</span>
-          </h2>
-          <ul className={styles.skillsList}>
-            <li className={styles.skillItem}>JavaScript</li>
-            <li className={styles.skillItem}>React</li>
-            <li className={styles.skillItem}>SCSS</li>
-            <li className={styles.skillItem}>Node.js</li>
-            <li className={styles.skillItem}>Git</li>
-          </ul>
-        </div>
-      </section>
+      </div>
+    </div>
 
-      <section className={styles.experience} id="experience">
-        <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Work Experience</h2>
-          <div className={styles.experienceItem}>
-            <h3 className={styles.jobTitle}>Frontend Developer</h3>
-            <p className={styles.companyName}>TechCorp</p>
-            <p className={styles.duration}>Jan 2020 - Present</p>
-            <p className={styles.jobDescription}>
-              Developed and maintained web applications using React and JavaScript.
-            </p>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div className="cards">
+        <div className="card">
+          <div className="imge">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png" alt="" />
+
           </div>
-          <div className={styles.experienceItem}>
-            <h3 className={styles.jobTitle}>Web Designer</h3>
-            <p className={styles.companyName}>DesignStudio</p>
-            <p className={styles.duration}>Jun 2018 - Dec 2019</p>
-            <p className={styles.jobDescription}>
-              Designed user interfaces and created responsive web designs.
-            </p>
+          <p>HTML</p>
+        </div>
+        <div className="card">
+          <div className="imge">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/544px-CSS3_logo_and_wordmark.svg.png" alt="" />
+
           </div>
+          <p>CSS</p>
         </div>
-      </section>
+        <div className="card">
+          <div className="imge">
+          <img src="https://seeklogo.com/images/J/javascript-js-logo-2949701702-seeklogo.com.png" alt="" />
 
-      <section className={styles.education} id="education">
-        <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Education</h2>
-          <div className={styles.educationItem}>
-            <h3 className={styles.degree}>Bachelors in Computer Science</h3>
-            <p className={styles.institution}>University of Tech</p>
-            <p className={styles.year}>2015 - 2019</p>
           </div>
+          <p>JavaScript</p>
         </div>
-      </section>
+        <div className="card">
+          <div className="imge">
+          <img src="https://static-00.iconduck.com/assets.00/react-original-wordmark-icon-840x1024-vhmauxp6.png" alt="" />
 
-      <section className={styles.contact} id="contact">
-        <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Contact Me</h2>
-          <ul className={styles.contactInfo}>
-            <li>Email: johndoe@email.com</li>
-            <li>Phone: +123 456 7890</li>
-            <li>Website: www.johndoe.com</li>
-          </ul>
+          </div>
+          <p>React</p>
         </div>
-      </section>
+        <div className="card">
+          <div className="imge">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="" />
 
+          </div>
+          <p>Python</p>
+        </div>
+      </div>
+    </section>
 
-      <footer className={styles.footer}>
-        <p className={styles.footerText}>
-          &copy; 2024 John Doe. All rights reserved.
-        </p>
-      </footer>
+    <section id="about">
+      <div className="box">
+      <h2>About Me</h2>
+      <p>Hi, I'm Zeyneb, and I'm currently studying Information Technology at Azmiu. My passion for technology and creativity drives me to explore various aspects of the IT field, with a particular interest in coding and web design. I love turning ideas into functional, visually appealing websites, and I’m always eager to learn new tools and techniques to improve my skills.
+
+Outside of tech, I enjoy drawing, reading books, and constantly working on personal growth. I'm excited to share my future projects and journey with you here. Thank you for visiting my portfolio!
+
+</p>
+
+      </div>
+    </section>
+      
     </>
   )
 }
